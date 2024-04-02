@@ -1,0 +1,159 @@
+* {
+	box-sizing: border-box;/* includes padding and margin in width and height */
+  margin: 0;
+  padding: 0;
+  color:white;
+  font-family: Verdana, sans-serif;
+}
+
+#root{
+
+}
+
+.parent-container{
+  display:flex;
+  justify-content: center; /*center width*/
+  align-items: center;/* center height */
+  flex-direction: column;
+  height:100vh;
+  width:100vw;
+  background-color: rgb(47, 47, 47);
+}
+
+input {
+  color:black;
+}
+
+.row {
+  display:flex;
+}
+
+/* V==================Bottom Container==================V */
+
+.bottom-container { /* the bottom most dark box, contains the controls */
+  display:flex;
+  flex-direction: column;
+  background-color: rgb(36, 43, 66);
+  width:100%;
+  height:30%;
+  overflow: auto;
+  border-top: 5px solid rgb(160, 212, 211);
+}
+
+.control-container{ /* a child div of the bottom container that contains the individual controls */
+  margin-left:2%;
+}
+
+.size-control{ /* the components that control size (square, grid, gap) */
+  display:flex;
+  width:100%;
+  padding:5px;
+}
+.size-control label{
+  text-align: center;
+  display:flex;
+  align-items: center;
+}
+
+.int-slider-container{ /* the sliders */
+  display:flex;
+  width:90%;
+  padding:10px;
+  align-items: center;
+}
+.int-slider-container div{
+  padding-left:4px;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 10px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #ffffff;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.color-form{ /* color input */
+  margin-top:7px;
+}
+.color-control{
+  display:flex;
+  width:100%;
+  padding:5px;
+}
+.color-control label{
+  width:10%;
+  text-align: center;
+  padding:5px;
+}
+
+.change-btn{ /* submit buttons for the controls */
+  background-color: rgb(36, 43, 66);
+  color: rgb(89, 107, 167);
+  border: 2px solid rgb(69, 83, 128); /* Green */
+  border-radius: 15px;
+  padding:4px;
+}
+.change-btn:hover{
+  color:rgb(131, 156, 238);
+  border-color: rgb(131, 156, 238);
+}
+
+/* ^==================Bottom Container==================^ */
+
+/* V==================Title Container==================V */
+
+.title-container{
+  width:100vw;
+  background-color: rgb(36, 43, 66);
+  position: relative;
+  z-index: 10;
+  padding:4px;
+  border-bottom: 5px solid rgb(160, 212, 211);
+}
+.title{
+  color:white;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* ^==================Title Container==================^ */
+
+/* V==================Top Container==================V */
+
+.top-container {
+  background-color: rgb(236, 236, 236);
+  width:100%;
+  display: flex;
+  justify-content: center;
+  height:70%;
+  overflow: auto;
+}
+
+.grid-container {
+  padding: 10px;
+}
+
+/* ^==================Top Container==================^ */
+
+
+
+
